@@ -7,6 +7,8 @@ drivers do **not** expose a hardware landscape mode.
 
 The trick: **rotate in software inside the LVGL flush callback.**
 
+![portrait panel rotated to landscape in the flush callback](assets/rotation.svg)
+
 ## The problem
 
 - The AXS15231B panel scans natively in **portrait**: 320 wide x 480 tall.

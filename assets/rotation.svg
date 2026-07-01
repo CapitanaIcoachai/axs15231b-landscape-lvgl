@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="820" height="380" rx="12" fill="#0d1117"/>
+  <text x="410" y="42" fill="#e6edf3" font-size="20" font-weight="700" text-anchor="middle">AXS15231B: portrait-only panel → landscape via software rotation</text>
+
+  <!-- portrait panel -->
+  <rect x="120" y="90" width="150" height="225" rx="10" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="195" y="185" fill="#8b949e" font-size="14" text-anchor="middle">320 × 480</text>
+  <text x="195" y="207" fill="#6e7681" font-size="12" text-anchor="middle">native portrait</text>
+  <text x="195" y="345" fill="#8b949e" font-size="13" text-anchor="middle">the panel</text>
+
+  <!-- arrow / transform -->
+  <text x="410" y="185" fill="#d29922" font-size="14" font-weight="700" text-anchor="middle">rotate in the</text>
+  <text x="410" y="205" fill="#d29922" font-size="14" font-weight="700" text-anchor="middle">LVGL flush cb</text>
+  <path d="M330 220 H500" stroke="#d29922" stroke-width="3" fill="none" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#d29922"/></marker></defs>
+  <text x="410" y="250" fill="#6e7681" font-size="12" text-anchor="middle" font-family="ui-monospace, Menlo, monospace">gfx-&gt;drawPixel(ly, PANEL_H-1-lx, c)</text>
+
+  <!-- landscape frame -->
+  <rect x="540" y="150" width="225" height="150" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="652" y="220" fill="#e6edf3" font-size="15" text-anchor="middle">480 × 320</text>
+  <text x="652" y="242" fill="#3fb950" font-size="12" text-anchor="middle">what LVGL sees</text>
+  <text x="652" y="345" fill="#8b949e" font-size="13" text-anchor="middle">your UI in landscape</text>
+</svg>
